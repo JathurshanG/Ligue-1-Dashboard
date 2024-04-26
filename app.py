@@ -19,6 +19,9 @@ df['homeScore'] = df['homeScore'].astype(float)
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
+server = app.server
+
+
 app.layout = html.Div([
     dbc.Row([
         dbc.Col(dcc.Dropdown(
@@ -140,4 +143,4 @@ def dtm(season,team):
 
 
 if __name__ == '__main__':
-    app.run_server()
+        app.run(debug=True)
