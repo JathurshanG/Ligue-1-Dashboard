@@ -10,9 +10,6 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 
 
-df = pd.read_json('output/output.json').dropna(subset='awayScore')
-
-df['homeScore'] = df['homeScore'].astype(float)
 
 # season = "2014-2015"
 # team = "STADE DE REIMS"
@@ -20,6 +17,9 @@ df['homeScore'] = df['homeScore'].astype(float)
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 server = app.server
+
+df = pd.read_json('output/output.json').dropna(subset='awayScore')
+df['homeScore'] = df['homeScore'].astype(float)
 
 
 app.layout = html.Div([
