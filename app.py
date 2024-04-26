@@ -10,7 +10,7 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 
 
-df = pd.read_json('output/output.json').dropna(subset='awayScore')
+df = pd.read_json('https://github.com/JathurshanG/ligue-1-dashboard/blob/master/output/output.json').dropna(subset='awayScore')
 
 df['homeScore'] = df['homeScore'].astype(float)
 
@@ -140,4 +140,4 @@ def dtm(season,team):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server()
