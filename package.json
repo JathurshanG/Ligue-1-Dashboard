@@ -1,0 +1,7 @@
+{
+  "name": "ligue1-dashboard",
+  "version": "1.0.0",
+  "description": "Your Dash application",
+  "scripts": {
+    "start": "python app.py" 
+}
