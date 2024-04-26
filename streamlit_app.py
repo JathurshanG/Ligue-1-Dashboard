@@ -1,3 +1,8 @@
+!pip install dash
+!pip install dash_bootstrap_components
+!pip install pandas
+pip install -U scikit-learn
+
 import dash
 from dash import dcc, html,dash_table
 from dash.dependencies import Input, Output
