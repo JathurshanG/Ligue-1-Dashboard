@@ -9,16 +9,11 @@ from collections import Counter
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 
-
-
-# season = "2014-2015"
-# team = "STADE DE REIMS"
-
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 server = app.server
 
-df = pd.read_json('output/output.json').dropna(subset='awayScore')
+df = pd.read_json('https://raw.githubusercontent.com/JathurshanG/ligue-1-dashboard/master/output/output.json').dropna(subset='awayScore')
 df['homeScore'] = df['homeScore'].astype(float)
 
 

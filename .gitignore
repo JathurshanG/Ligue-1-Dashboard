@@ -2,4 +2,7 @@ venv
 *.pyc
 .env
 .DS_Store
+<<<<<<< HEAD
 .venv
+=======
+>>>>>>> db75666a7c5bd3da215ab030adc02e8edaa612d9
