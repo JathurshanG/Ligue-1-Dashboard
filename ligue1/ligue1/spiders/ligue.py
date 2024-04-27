@@ -6,6 +6,7 @@ from scrapy.linkextractors import LinkExtractor
 class LigueSpider(CrawlSpider):
     name = "ligue"
     allowed_domains = ["www.ligue1.fr"]
+
     start_urls = [f"https://www.ligue1.fr/calendrier-resultats?seasonId=20{i}-20{i+1}" for i in range(14,24)]
 
     rules = (
