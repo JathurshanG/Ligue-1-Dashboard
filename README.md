@@ -48,7 +48,6 @@ For an interactive and detailed visualization of Ligue 1 statistics, visit our d
 [Access the Ligue 1 Dashboard](https://ligue1-dashboard-b36eec85063c.herokuapp.com/)
 
 
-![Dashboard Screenshot](output/screenshot.png)
 ## Authors
 
 [JathurshanG](https://github.com/JathurshanG) - Initial work
